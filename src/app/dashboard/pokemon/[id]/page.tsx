@@ -20,6 +20,7 @@ const getPokemon = async (id: string): Promise<Pokemon> => {
 
     return pokemon;
   } catch (error) {
+    console.log("There was an issue here", error);
     notFound();
   }
 };
